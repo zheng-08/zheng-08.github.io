@@ -1,46 +1,146 @@
 <!DOCTYPE html>
-<html lang="zn-CH"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>安</title>
-</head>
-<body style="
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-"><touxianglan style="
-    width: 100%;
-    height: 160px;
-    background-color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-"><img src="data:image/jpeg;base64,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" alt="头像" width="80px" height="80px"></touxianglan>
-    <zhuneirong style="
-    display: block;
-    padding: 30px;
-    max-width: 300px;
-    min-height: 70vh;
-    width: 90%;
-    letter-spacing: 1px;
-    line-height: 1.7;
-"><p>你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊你好啊</p>
-    <p>我是证安</p>
-    <p>欢迎来到我的个人网站</p></zhuneirong>
-    <dibulan style="
-    width: 100%;
-    height: 160px;
-    background-color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-">
-        <p>版权</p>
-        <p>备案号</p>
-    </dibulan>
-    
-    
-
-</body></html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex布局</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .yinying {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(190, 190, 190);
+        font-size: 14px;
+        color: #666;
+      }
+      @media (max-width: 600px) {
+        .ceBian {
+          display: none;
+        }
+        .neiRong {
+          flex-direction: column;
+        }
+        .shuJuQu {
+          flex-direction: column;
+        }
+        .youQu {
+          margin-left: 8px;
+        }
+        .shuJuKuai {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2" class="ceBian baise yinying">
+      <!-- 头像栏 -->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <img
+          src="https://th.bing.com/th/id/OIP.Ekyqq_T0BDXvef1bfI2qDQHaHa?rs=1&pid=ImgDetMain"
+          width="40px"
+          height="40px"
+          alt=""
+        />
+        <div style="margin-left: 10px">蜡笔小新</div>
+      </div>
+      <!-- 导航栏 -->
+      <div class="flex1">
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+      </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+      <!-- 头部栏 -->
+      <div style="height: 60px; z-index: 1" class="baise yinying"></div>
+      <!-- 内容区 -->
+      <div style="overflow: auto" class="neiRong flex1 flex">
+        <!-- 左区 -->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 数据区 -->
+          <div class="flex shuJuQu">
+            <!-- 数据块 -->
+            <div
+              style="height: 100px"
+              class="shuJuKuai flex1 baise mgr8 yinying"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuJuKuai flex1 baise mgr8 yinying"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuJuKuai flex1 baise mgr8 yinying"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuJuKuai flex1 baise yinying"
+            ></div>
+          </div>
+          <!-- 列表区 -->
+          <div class="flex column">
+            <!-- 列表项 -->
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+          </div>
+        </div>
+        <!-- 右区 -->
+        <div style="flex: 1" class="youQu flex column mgr8 mgt8">
+          <!-- 提示区 -->
+          <div style="height: 150px" class="baise yinying"></div>
+          <!-- 消息区 -->
+          <div style="height: 300px" class="baise mgt8 yinying"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
