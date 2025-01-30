@@ -1,48 +1,108 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>安疯</title>
-     <link rel="Shortcut Icon" href="https://i.postimg.cc/J76xdLkd/logo.png" />
-</head>
-<body style="
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-"><touxianglan style="
-    width: 100%;
-    height: 160px;
-    background-color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-"><img src="https://i.postimg.cc/J76xdLkd/logo.png" alt="头像" width="80px" height="80px"></touxianglan>
-    
-    <zhuneirong style="
-    display: block;
-    padding: 30px;
-    max-width: 700px;
-    min-height: 70vh;
-    width: 90%;
-    letter-spacing: 1px;
-    line-height: 1.7;
-"><p>你好哇</p>
-    <p>我我是安疯</p>
-    <p>欢迎来到我的网站</p>
-    <p>这是我的第一个网页，对我来说意义非凡。请勿肆意破坏他人网站，我写了个方便我自己的工具箱要是有疑惑可以私信ig：@wza_wong</p>
-    </zhuneirong>
-    <dibulan style="
-    width: 100%;
-    height: 160px;
-    background-color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-">
-        <p>版权</p>
-        <p>备案号</p>
-    </dibulan>
-
-</body></html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人简介</title>
+    <link rel="Shortcut Icon" href="https://i.postimg.cc/J76xdLkd/logo.png" />
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(0, 217, 255),
+          rgb(0, 255, 0)
+        );
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .bs {
+        background-color: rgba(138, 138, 138, 0.6);
+      }
+      .tbl {
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nrq {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .dbl {
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+      }
+      .sjk {
+        height: 400px;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 15px;
+        line-height: 1.7;
+      }
+      @media screen and (max-width: 600px) {
+        .tbl {
+          position: sticky;
+          top: 0;
+          z-index: 9999;
+          background-color: rgb(138, 138, 138);
+        }
+        body {
+          background-image: linear-gradient(
+            to bottom right,
+            rgb(0, 217, 255),
+            rgb(0, 255, 0)
+          );
+        }
+        .bs {
+          background-color: rgba(138, 138, 138, 0.85);
+        }
+        .dbl {
+          background-color: rgb(138, 138, 138);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 头部栏 -->
+    <div class="tbl bs">
+      <img
+        src="https://i.postimg.cc/J76xdLkd/logo.png"
+        alt="头像"
+        height="80px"
+        width="80px"
+        loading="lazy"
+        style="border-radius: 100%"
+      />
+    </div>
+    <!-- 内容区 -->
+    <div class="nrq">
+      <!-- 数据块 -->
+      <div class="sjk bs">
+        <p>你好哇</p>
+        <p>我我是安疯</p>
+        <p>欢迎来到我的网站</p>
+        <p>
+          这是我的第一个网页，对我来说意义非凡。请勿肆意破坏他人网站，我写了个方便我自己的工具箱要是有疑惑可以私信ig：@wza_wong
+        </p>
+      </div>
+    </div>
+    <!-- 底部栏 -->
+    <div class="dbl bs">
+      <p>请勿侵犯版权</p>
+    </div>
+  </body>
+</html>
