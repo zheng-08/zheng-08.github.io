@@ -77,16 +77,20 @@
           background-color: rgb(138, 138, 138);
         }
       }
+      .picture {
+        width: 80px;
+        height: 100px;
+      }
     </style>
   </head>
   <body>
     <!-- 头部栏 -->
     <div class="tbl bs">
       <img
-        src="https://i.postimg.cc/J76xdLkd/logo.png"
+        src="https://i.ibb.co/h14pYQgp/logo09.webp"
         alt="头像"
-        height="80px"
-        width="80px"
+        height="70px"
+        width="70px"
         loading="lazy"
         style="border-radius: 100%"
       />
@@ -107,5 +111,12 @@
     <div class="dbl bs">
       <p>请勿侵犯版权</p>
     </div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
   </body>
 </html>
