@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="这是我的个人简介网站。" />
-    <meta name="keywords" content="个人简介, 网站, 前端" />
+    <meta name="keywords" content="个人简介, 网站, 前端, 暗" />
     <meta name="author" content="暗" />
     <title>个人简介</title>
-    <link rel="Shortcut Icon" href="https://i.ibb.co/h14pYQgp/logo09.webp" />
+    <link rel="icon" href="https://i.ibb.co/6c1NQ0cy/logo.png" />
     <style>
-      /* * {
-        border: 1px solid black;
-      } */
       body {
         margin: 0;
         height: 100vh;
@@ -22,6 +19,12 @@
         );
         display: flex;
         flex-direction: column;
+        font-family: '宋体';
+      }
+      .img-logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
       }
       .header {
         height: 100px;
@@ -30,21 +33,17 @@
         justify-content: center;
         align-items: center;
       }
-      .bodier {
+      .white {
+        background-color: rgb(194, 194, 194, 0.5);
+      }
+      .main {
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 20px;
       }
-      .footer {
-        height: 100px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-      }
-      .box1 {
+      .box {
         height: 400px;
         width: 800px;
         border-radius: 30px;
@@ -52,62 +51,64 @@
         flex-direction: column;
         align-items: center;
       }
-      .img-logo {
-        border-radius: 100%;
-        height: 80px;
-        width: 80px;
-      }
-      .white {
-        background-color: rgb(163, 163, 163, 0.5);
-      }
-      .shadow {
-        box-shadow: 10px 10px 5px #585858;
-      }
-      .f-style {
-        font-family: 宋体;
+      .yinYing {
+      box-shadow: 0 8px 32px rgba(60, 60, 60, 0.18);
       }
       @media screen and (max-width: 800px) {
-        .header {
-          height: 80px;
-        }
-        .img-logo {
-          height: 50px;
-          width: 50px;
-        }
-        .bodier {
-            margin-top: 20px;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-bottom: 20px;
-        }
-        .shadow {
-            box-shadow: none;
-        }
-    }
+  .box {
+    height: 300px;
+    border-radius: 20px;
+    margin: auto;
+  }
+  .img-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    height: 60px;
+  }
+  .box {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
     </style>
   </head>
   <body>
     <!-- header -->
-    <div class="header white shadow">
+    <div class="header white yinYing">
       <img
-        src="https://i.ibb.co/h14pYQgp/logo09.webp"
-        alt="my-logo"
+        src="https://i.ibb.co/6c1NQ0cy/logo.png"
+        alt="logo"
         class="img-logo"
+        loading="eager"
       />
     </div>
-    <!-- bodier -->
-    <div class="bodier shadow">
-      <!-- box1 -->
-      <div class="box1 white shadow f-style">
+    <!-- main -->
+    <div class="main">
+      <!-- box -->
+      <div class="box white yinYing">
         <h1>欢迎来到我的网站</h1>
         <p>这是我个人写的第一个网站</p>
         <p>对我而言意义非凡</p>
-        <p>后续我会把一写好用的网站供大家使用</p>
+        <p>请不要侵犯我的版权，谢谢。</p>
       </div>
     </div>
-    <!-- footer -->
-    <div class="footer white f-style">
-      <b>请勿侵犯版权</b>
-    </div>
   </body>
+  <footer
+    class="white"
+    style="text-align: center; padding: 20px; color: #d4d4d4"
+  >
+    © 2025 暗 | 个人简介
+  </footer>
 </html>
