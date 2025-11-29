@@ -3,112 +3,217 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="这是我的个人简介网站。" />
-    <meta name="keywords" content="个人简介, 网站, 前端, 暗" />
-    <meta name="author" content="暗" />
+    <meta name="description" content="这是证安的个人简介网页，介绍了他的背景、技能和联系方式。" />
+    <meta name="keywords" content="证安, 个人简介, 前端开发, 编程, 网页开发" />
+    <meta name="author" content="证安" />
     <title>个人简介</title>
-    <link rel="icon" href="https://i.ibb.co/6c1NQ0cy/logo.png" />
+    <link rel="icon" href="https://i.ibb.co/6c1NQ0cy/logo.png">
     <style>
-      body {
-        margin: 0;
-        height: 100vh;
-        background-image: linear-gradient(
-          to bottom right,
-          rgb(243, 243, 243),
-          rgb(0, 0, 0)
-        );
-        display: flex;
-        flex-direction: column;
-        font-family: '宋体';
-      }
-      .img-logo {
-        width: 80px;
-        height: 80px;
-        border-radius: 100%;
-      }
-      .header {
-        height: 100px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .white {
-        background-color: rgb(194, 194, 194, 0.5);
-      }
-      .main {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-      }
-      .box {
-        height: 400px;
-        width: 800px;
-        border-radius: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .yinYing {
-      box-shadow: 0 8px 32px rgba(60, 60, 60, 0.18);
-      }
-      @media screen and (max-width: 800px) {
-  .box {
-    height: 300px;
-    border-radius: 20px;
-    margin: auto;
-  }
-  .img-logo {
-    width: 50px;
-    height: 50px;
-  }
-}
+          body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
 
-@media screen and (max-width: 600px) {
-  .header {
-    height: 60px;
-  }
-  .box {
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  h1 {
-    font-size: 22px;
-  }
-  p {
-    font-size: 14px;
-  }
-}
+          }
+          /* * {
+            border: 1px solid black;
+          } */
+          header {
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-image: url(https://imgs.699pic.com/images/600/292/003.jpg!detail.v1);
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          footer {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f1f1f1;
+            color: gray;
+          }
+          .neiRongQu {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            background-color: #f1f1f1;
+          }
+          .neiRong {
+            height: 600px;
+            width: 70%;
+            border-radius: 20px;
+            margin: auto;
+            padding: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          .touXiang {
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+          }
+          .lazy-img {
+        filter: blur(20px);
+        transition: filter 0.3s ease;
+      }
+      .lazy-img.loaded {
+        filter: blur(0);
+      }
+          .neiRongYiWenZi {
+            flex: 1;
+            height: 100%;
+            border-radius: 10px;
+            margin-right: 10px;
+            background-color: #eef1ff;
+            text-align: center;
+            text-justify: center;
+            line-height: 30px;
+            font-size: 12px;
+          }
+          .biaoTiSanNeiRong {
+            height: 50px;
+            width: 150px;
+            display: flex;
+          }
+          .biaoTiSiNeiRong {
+            display: flex;
+            align-items: center;
+          }
+          ::-webkit-scrollbar {
+            display: none;
+          }
+          @media screen and (max-width: 600px) {
+            .neiRong {
+              height: auto;
+              width: 80%;
+            }
+          @media screen and (max-width: 500px) {
+            .neiRongYiWenZiHeZi {
+                flex-direction: column;
+              }
+            .neiRongYiWenZi {
+                margin-top: 5px;
+              }
+            }
+          }
     </style>
   </head>
   <body>
-    <!-- header -->
-    <div class="header white yinYing">
-      <img
-        src="https://i.ibb.co/6c1NQ0cy/logo.png"
-        alt="logo"
-        class="img-logo"
-        loading="eager"
-      />
-    </div>
-    <!-- main -->
-    <div class="main">
-      <!-- box -->
-      <div class="box white yinYing">
-        <h1>欢迎来到我的网站</h1>
-        <p>这是我个人写的第一个网站</p>
-        <p>对我而言意义非凡</p>
-        <p>请不要侵犯我的版权，谢谢。</p>
+    <!-- 头部栏 -->
+    <header>
+      <h1 style="margin: 0px; color: white;">你好，我是 证安</h1>
+      <p style="margin: 10px; color: white;">
+        网页开发 · 编程爱好 · 前端开发者
+      </p>
+    </header>
+    <!-- 补充区 -->
+    <div style="flex: 1; overflow: auto;">
+      <!-- 内容区 -->
+      <div class="neiRongQu">
+        <!-- 内容 -->
+        <div class="neiRong">
+          <!-- 标题一 -->
+          <h2>关于我：</h2>
+          <!-- 标题一内容 -->
+          <div style="display: flex;">
+            <!-- 图片 -->
+            <img
+              src="https://i.ibb.co/6c1NQ0cy/logo.jpg"
+              data-src="https://i.ibb.co/6c1NQ0cy/logo.png"
+              alt="头像"
+              class="touXiang lazy-img"
+              loading="lazy"
+            />
+            <!-- 文字 -->
+            <div
+              style="display: flex; flex-direction: column; margin-left: 20px;"
+            >
+              <p style="margin: 0;">
+                大家好！我是证安，一名热爱编程和网页开发的前端开发者
+              </p>
+              <h3 style="margin: 0; margin-top: 10px;">技能</h3>
+              <div
+                style="display: flex; flex: 1; margin-top: 5px;"
+                class="neiRongYiWenZiHeZi"
+              >
+                <div class="neiRongYiWenZi">HTML</div>
+                <div class="neiRongYiWenZi">CSS</div>
+                <div class="neiRongYiWenZi">JavaScript</div>
+                <div class="neiRongYiWenZi">编程</div>
+              </div>
+            </div>
+          </div>
+          <!-- 标题二 -->
+          <h2>个人背景：</h2>
+          <!-- 标题二内容 -->
+          <p>
+            我是一名正在就读中学的学生，同时自学编程，并持续学习前后端开发技术。我对软件开发抱有浓厚兴趣，希望未来能在这一领域不断成长与进步。
+          </p>
+          <!-- 标题三 -->
+          <h2>个人作品：</h2>
+          <!-- 标题三内容 -->
+          <div class="biaoTiSanNeiRong">
+            <a
+              href="https://zheng-08.github.io/tools/"
+              style="text-decoration: none;"
+            >
+              <div
+                style="height: 50px; 
+                width: 150px; 
+                border-radius: 10px; 
+                background-color: #eef1ff; 
+                display: flex; 
+                justify-content: center; 
+                align-items: center;"
+              >
+                <p style=" color: black;">个人工具网站</p>
+              </div>
+            </a>
+          </div>
+          <!-- 标题四 -->
+          <h2>联系我：</h2>
+          <!-- 标题四内容 -->
+          <div class="biaoTiSiNeiRong">
+            <p>instagram: @wza_wong</p>
+            <a href="https://github.com/zheng-08" style="margin-left: 20px;"
+              >Github</a
+            >
+            <p>/</p>
+            <a href="https://zhengan142@gmail.com">Gmail</a>
+          </div>
+        </div>
       </div>
+      <!-- 底部栏 -->
+      <footer>2025 © 证安 版权所有</footer>
     </div>
+    <script>
+      const lazyImages = document.querySelectorAll("img[data-src]");
+
+      const loadImg = (img) => {
+        img.src = img.dataset.src;
+        img.onload = () => img.classList.add("loaded");
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            loadImg(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      lazyImages.forEach((img) => observer.observe(img));
+    </script>
   </body>
-  <footer
-    class="white"
-    style="text-align: center; padding: 20px; color: #d4d4d4"
-  >
-    © 2025 暗 | 个人简介
-  </footer>
 </html>
